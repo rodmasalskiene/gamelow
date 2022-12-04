@@ -2,43 +2,11 @@
   margin-left: 200px; /* Same as the width of the sidenav */
 }
 
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: relative;
-  z-index: 1;
-  top: 1;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  border-right: 1px solid rgb(212, 203, 203);
-  float: left;
-  margin-right: 40px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #c0b2b2;
-}
-
 #main {
   transition: margin-left .5s;
   padding: 20px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 
 .col-md-8{
     -webkit-box-shadow: -5px 6px 7px -6px rgba(184,178,184,0.8);
@@ -50,4 +18,83 @@
     -webkit-box-shadow: -2px 2px 7px -3px rgba(191,185,191,1);
     -moz-box-shadow: -2px 2px 7px -3px rgba(191,185,191,1);
     box-shadow: -2px 2px 7px -3px rgba(191,185,191,1);
+}
+
+.sidenav {
+  height: 100%;
+  width: 11%;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 1px solid rgb(212, 203, 203);
+}
+
+
+
+
+
+.bd-sidebar {
+    top: 6rem;
+    display: block !important;
+    height: calc(99vh - 6rem);
+    padding-left: 0.25rem;
+    margin-left: -0.25rem;
+    overflow-y: auto;
+}
+
+
+@media all and (max-width: 800px){
+  .sidenav a{ 
+    padding-left: 2px;
+    font-size: 12px;}
+}
+
+@media all and (max-width: 100px){
+  .sidenav { display: none;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #d7d5d8;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+.title-sidebar{
+  font-weight: 600;
+  padding: 8px 8px 8px 15px;
+  margin-bottom: -5px;
+  font-size: 16px;
+
+}
+
+.sidenav a {
+  padding: 3px 3px 3px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #141313;
+}
+
+.list-games{
+  margin-bottom: 10px;
 }
