@@ -31,10 +31,6 @@
   border-right: 1px solid rgb(212, 203, 203);
 }
 
-
-
-
-
 .bd-sidebar {
     top: 6rem;
     display: block !important;
@@ -54,6 +50,8 @@
 @media all and (max-width: 100px){
   .sidenav { display: none;}
 }
+
+/*ARRUMAR ESSE HOVER PRA SUMIR COM A BARRA*/
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -98,3 +96,32 @@
 .list-games{
   margin-bottom: 10px;
 }
+
+.sidenav-right {
+  height: 100%;
+  width: 11%;
+  z-index: 1;
+  right: 0.5%;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-left: 1px solid rgb(212, 203, 203);
+  top: 6rem;
+  display: block !important;
+  height: calc(99vh - 6rem);
+  padding-left: 0.25rem;
+  margin-left: -0.25rem;
+  overflow-y: hidden;
+  
+}
+
+.container{
+  margin-top: 15%; 
+  margin-left: 11.5%; 
+  margin-right: 12%; 
+  max-height: 50%; max-width: 76%;  
+  display: flex; 
+  flex-wrap: nowrap; 
+  flex-direction: column;
+}
+
